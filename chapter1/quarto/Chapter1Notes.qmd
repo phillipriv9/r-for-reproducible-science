@@ -58,12 +58,12 @@ exp(5) # e ^ 5
 1 == 1 #looks for equality
 
 1 != 2 #looks for inequality
-1 > 10
-10 < 1
+1 > 10 # greater than
+10 < 1 #less than
 
-1 >= 10
+1 >= 10 #Greater than or equal to
 
-1 <= 1
+1 <= 1 #Lesser than or equal to
 
 5*5 == 35-10
 
@@ -137,4 +137,18 @@ r,(list = ls()) #clears your entire environment
 *Challenge 1
 +_age, 2widths, and min length are invalid. The rest do create variables with .mass being a hidden variable
 
-#Challenge 2
+*Challenge 2
+
+```{r}
+mass = 47.5
+age = 122
+mass = mass*2.8
+age = age - 20
+```
+
+*Challenge 3
+```{r}
+
+mass >= age
+
+```
