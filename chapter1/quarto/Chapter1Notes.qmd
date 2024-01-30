@@ -1,0 +1,140 @@
+---
+title: "Chapter1Notes"
+format:
+  html:
+    toc: true
+editor: source
+---
+
+##General overview notes.
+
+*Discusses basic aspects of RStudio and how to orientate one's self within the program.
+  +All of this is mostly review. Nothing super revelatory here or in the workflow of R sections
+  +Talks about R Script files and stuff
+  
+##Using R as a calculator
+
+```{r}
+
+
+#Doing simple math
+
+1+100
+
+72+56
+
+5-7*2
+
+(7-9)+23*5
+
+((5^4)*7)/121
+
+
+```
+
+##R and Math Functions
+
+*Talks about functions and what they are
+
+```{r}
+
+sin(1)
+
+log(1)
+
+tan(1)
+
+log10(100) #Base ten log
+
+exp(5) # e ^ 5
+
+```
+
+##Comparing values in R
+
+*R can also compare values
+
+```{r}
+1 == 1 #looks for equality
+
+1 != 2 #looks for inequality
+1 > 10
+10 < 1
+
+1 >= 10
+
+1 <= 1
+
+5*5 == 35-10
+
+```
+
+##Variables and assigning them
+
+*R allows for the creation of variables and can store them for you
+  +You assign the variable to the variable itself. Cannot contain spaces or slashes
+  +Several methods are used to seperate words
+    - periods.between.words
+    - Underscores_between_words (my_preferred_method)
+    - camelCaseToSeperateWords (This one just confuses me)
+  + You can also use the equal sign as an operator
+  
+
+```{r}
+
+x <- 1/7000
+
+x
+
+log(x)
+
+x <- 100
+
+#Variable wtih itself in the assignment.
+
+x <- x + 1
+
+y <- x * 2
+```
+
+
+##Vectorization
+
+*You can make vectors in R
+
+```{r}
+
+1:10
+
+2^(1:10)
+
+x = 1:5
+
+2^x
+
+```
+
+##Managing your environment
+
+*There are several commands that assisst with looking at and managing your environment
+
+```{r}
+
+ls() #Lists all of variables in environment
+
+rm() #Removes objects adn variables
+
+r,(list = ls()) #clears your entire environment
+
+```
+
+##RPackages
+
+*Discusses R packages and a variety of commands related to them. 
+
+##Challenges
+
+*Challenge 1
++_age, 2widths, and min length are invalid. The rest do create variables with .mass being a hidden variable
+
+#Challenge 2
