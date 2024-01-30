@@ -152,3 +152,18 @@ age = age - 20
 mass >= age
 
 ```
+
+*Challenge 4
+```{r}
+
+rm(age, mass)
+
+```
+
+*Challenge 5
+```{r}
+
+install.packages("plyr")
+install.packages("gapminder")
+
+```
