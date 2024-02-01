@@ -1,0 +1,62 @@
+---
+title: "chapter3notes"
+format:
+  html:
+    toc: true
+editor: source
+---
+
+##Reading Help Files
+
+General syntax for getting help files is ?function_name or help(function_name) +The syntax fro special operator help should like like ?"special_operator"
+
+Help pages are broken down into sections 
+  * Description: says what the function does 
+  * Usage: The fucntions arguments and default values 
+  * Argument: Explains what data each argument can use 
+  * Details: Anything the user should be aware of 
+  * Value: The data retuned by the function 
+  * See also: related functions 
+  * Examples: demonstrations of the function
+
+##Getting help with packages
+
+Use vignettes which are small tutorials that come with the package. 
+  * vignette() calls the vignette for all installed package 
+  * vignette(package = "packge-name")
+  * vignette("vignette-name")
+  
+##Fuzzy Search
+
+These are done to identify what package a function comes from or to search for the name of a function. Searches for approximates
+  *??function_name
+  
+##Ways to get effective help from your peers
+
+* ?dput allows you to dump your data into easily sharable format
+
+* sessionInfo() gives you current info on R, as well as all loaded packages
+
+
+##Challenges
+
+#Challenge1
+
+You will have a quantitative vector, a qualitative vecotr, and another another qualitative vector
+
+#Challenge2
+
+```{r}
+?paste
+```
+
+* Concatenate(link together in a chain or series) vectors after converting to character. Concatenation happens in two basically different ways, determined by collapse being a string or not.
+
+* sep determines how the vector values will be seperated. If you type a comma, it will seperate with a comma
+
+* Collasped groups vector after they have been and only seperates grouped vectors from each other
+
+#Challenge3
+
+
+read.table is function to load a tabular file

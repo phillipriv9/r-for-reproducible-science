@@ -6,4 +6,18 @@ format:
 editor: source
 ---
 
+##Introduction
+
+*Organization of data is very important
+*This can be solved via packages in R
+*Data needs to be treated as read only. Additionally the way you intitially collect your data and format it, may not be compatible with R. So you need to clean it. This cleaned Data should be in a seperate folder entirely
+*Outputs should be treated as disposable. You can make seperate sub directories for each output
+*Seperate code bsaed on what script will likely be made into a function and what will be general analysis
+
+*Can change working dir
+```{r}
+getwd() #Tells you your current WD
+
+setwd() #Lets you set a directory
+```
 
