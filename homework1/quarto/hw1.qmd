@@ -2,53 +2,23 @@
 title: "hw1"
 format:
   html:
-    toc:
-editor: visual
+    toc: true
+editor: source
 ---
-##Installing packages
+Package installation was done in normal code. Install.packages seems to not reocngize my CRAN mirror.
 
-```{r}
-.libPaths() #gets path to library
 
-library("readr")
-#Pulling data from website
-my_data <- read_tsv("http://www.sthda.com/upload/decathlon.txt")
-
-#looking at first 6 rows and columns
-
-my_data[1:6,1:6]
-
-#viewing loaded packages
-search()
-
-#Unload package. Can also just click check on package name
-detach("package:readr", unload = TRUE)
-
-#remove package
-
-remove.packages("package_name")
-
-#update packages
-
-update.packages()
-
-#specify updates
-
-update.packages(oldPkgs = c("readr", "ggplot2"))
-
-```
-##Data Types
-*Character
-*Numeric
-*logical - true and false
-*interger - for integer numbers
-*complex - shows complex numbers
-*raw - bitsreams
+## Data Types 
+* Character
+* Numeric 
+* logical - true and false
+* interger - for integer numbers 
+* complex - shows complex numbers
+* raw - bitsreams
 
 You can check this by using the typef() function and inputting the vector object
 
-
-##Vectors R Code
+## Vectors R Code
 
 ```{r}
 weight_g <- c(50,60,62,82)
@@ -78,7 +48,7 @@ weight_g <- c(30, weight_g) #adds to start of the vector
 weight_g
 ```
 
-##Subsetting vectors
+## Subsetting vectors
 
 ```{r}
 
@@ -94,7 +64,7 @@ more_animals
 
 R Indices start a 1, different from other languages (such as Java and Python)
 
-#Conditional Subsetting
+# Conditional Subsetting
 
 Subsets based on logical vectors
 
@@ -123,7 +93,7 @@ animals [animals %in% c("rat","cat", "dog", "duck", "goat", "bird", "fish")]
 
 ```
 
-##Challenges
+## Challenges
 
 #Chal1
 
@@ -147,8 +117,7 @@ class(tricky <- c(1,2,3, "4"))
 #Character
 ```
 
-
-##Missing Values
+## Missing Values
 
 ```{r}
 heights <- c(NA, 2,4,4,5,3)
@@ -169,9 +138,11 @@ na.omit(heights)
 heights[complete.cases(heights)]
 
 ```
+
 #Chal3
 
 Only value is "TRUE"
+
 ```{r}
 
 combined_logical <- c(num_logical, char_logical)
@@ -179,7 +150,7 @@ combined_logical <- c(num_logical, char_logical)
 
 #Chal4
 
-logical -> numeric -> characer <- logical
+logical -\> numeric -\> characer \<- logical
 
 #Chal5
 
@@ -195,8 +166,4 @@ heights_no_na <- na.omit(heights)
 median(heights, na.rm = TRUE)
 
 heights_no_na[na.omit(heights > 67)]
-
 ```
-
-
-
