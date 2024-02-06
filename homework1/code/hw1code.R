@@ -61,3 +61,6 @@ weight_g[weight_g > 30 & weight_g < 65]
 weight_g[weight_g <= 30 | weight_g == 62]
 
 
+
+
+
