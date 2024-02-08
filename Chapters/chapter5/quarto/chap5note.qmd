@@ -1,0 +1,58 @@
+---
+title: "Chap5"
+format: 
+  html:
+    toc: TRUE
+editor: source
+---
+
+### Data Frame and Manipulation
+Chapter disucsses dataframes and how to adjust/alter them
+
+##Adding rows and columns
+
+```{r}
+age <- c(4, 5,7)
+
+dog
+
+cbind(dog, age)# adds a column
+
+age_f <- c(2,3,5,11) 
+cbind(dog, age_f)#Error due to too many integers
+
+
+age_r <- c(2,3) 
+cbind(dog, age_r)#Error due to too few integers
+
+nrow(dog) #tells num of rows
+
+length(age_r) #getting vector legnth
+
+```
+
+For column adding to work your nrow() needs to equal your vector length
+
+```{r}
+newRow <- list("tortoiseshell", 3.3, TRUE, 9)
+cats <- rbind(dog, newRow) #Adding a row
+```
+
+##Removing rows and columns
+You can make the data show minus the row and/or column. Removing it simply entails putting that output into an object.
+
+```{r}
+dogs[-4,] #Putting the comma is what makes the row drop
+
+dogs <- dogs[-4,] #Permanently removes the row
+
+dogs[,-4] #Removes a column
+
+dogs3 <- dogs[,-4] #Permanently removes the column
+
+drop <- names(dogs) %in% c("age")
+dogs[,!drop] #Basically using the created command to remove a specific column
+
+```
+
+

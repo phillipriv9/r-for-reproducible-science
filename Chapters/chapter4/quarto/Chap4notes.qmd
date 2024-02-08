@@ -1,0 +1,49 @@
+---
+title: "Chap4notes"
+format: 
+  html:
+    toc: true
+editor: source
+---
+
+## Data Structures
+
+* Data in R needs to tabular (csv or excel document)
+* can creat csv files from data frames you make in r
+* read.table function used to read all forms of tabular data (sperated by punctuation). More broad version of read.csv
+* Can pull data from frames, check factors of data, adjust the data in the data frames themselves
+
+```{r}
+dog <- data.frame(breed = c("Beagel", "Labrador", "Husky"), weight = c(15, 70, 80), plays_fetch = c(1,0,1))
+
+#write.csv(x = dog, file = "data/canine-data.csv", row.names = FALSE), Quarto doesn't load these
+
+#dog <- read.csv(file = "data/canine-data.csv"), Quarto doesn't load these
+dog
+
+dog$weight
+
+dog$breed
+
+dog$weight + 10 
+
+paste("May dog is a", dog$breed)
+
+```
+
+
+## Data Types
+Repeat of HW not writing new notes
+
+
+## Vectors and Data Coercion
+
+* Can coerce data into certain types via as.factor and other functions
+
+```{r}
+dog$plays_fetch <- as.logical(dog$plays_fetch)
+```
+
+## Matrices
+
+* Essentially more advanced math data tables. Unlikely to be relevant for my research
